@@ -1,3 +1,7 @@
 nav li {
     display: inline;
 }
+
+img {
+    width: 300px;
+}
