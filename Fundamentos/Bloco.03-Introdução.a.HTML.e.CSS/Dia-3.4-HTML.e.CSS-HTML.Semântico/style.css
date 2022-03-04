@@ -1,7 +1,35 @@
 nav li {
-    display: inline;
+  display: inline;
 }
 
 img {
-    width: 300px;
+  width: 300px;
+}
+
+body {
+  color: white;
+  background-color: black;
+}
+
+img {
+    margin-left: 100%;
+    border-radius: 50%;
+}
+
+#texto {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#boxeadora {
+    text-align: center;
+    margin-top: 150px;
+}
+
+div {
+    text-align: center;
+}
+
+aside {
+    margin-top: 100px;
 }
