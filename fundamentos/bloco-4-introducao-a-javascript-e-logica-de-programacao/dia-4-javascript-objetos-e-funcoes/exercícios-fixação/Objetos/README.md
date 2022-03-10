@@ -1,0 +1,1 @@
+O enunciado do exercício se encontra dentro do arquivo.
