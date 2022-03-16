@@ -1,79 +1,132 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Exercício 5.2</title>
     <style>
-      section {
-        border-color: black;
-        border-style: solid;
-      }
+        section {
+            border-color: black;
+            border-style: solid;
+        }
 
-      .title {
-        text-align: center;
-      }
+        .title {
+            text-align: center;
+        }
 
-      .main-content {
-        background-color: yellow;
-      }
+        .main-content {
+            background-color: yellow;
+        }
 
-      .main-content .center-content {
-        background-color: red;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-      .main-content .center-content p {
-        font-style: italic;
-      }
+        .main-content .center-content p {
+            font-style: italic;
+        }
 
-      .main-content .left-content {
-        background-color: green;
-        width: 60%;
-        margin-left: 0;
-        margin-right: auto;
-      }
+        .main-content .left-content {
+            background-color: green;
+            width: 60%;
+            margin-left: 0;
+            margin-right: auto;
+        }
 
-      .main-content .left-content .small-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 100%;
-      }
+        .main-content .left-content .small-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
 
-      .main-content .right-content {
-        background-color: blue;
-        width: 60%;
-        margin-left: auto;
-        margin-right: 0;
-      }
+        .main-content .right-content {
+            background-color: blue;
+            width: 60%;
+            margin-left: auto;
+            margin-right: 0;
+        }
 
-      .main-content .description {
-        text-align: center;
-      }
+        .main-content .description {
+            text-align: center;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
-    //   Adicione a tag 'h1' com o texto 'Exercício 5.2 - JavaScript DOM' como filho da tag 'body'
-    const paiBody = document.getElementsByTagName('body');
-    const filhoH1 = document.createElement('h1');
-    filhoH1.innerText = 'Exercício 5.2 - JavaScript DOM';
-    document.paiBody.appendChild(filhoH1);
+        // Adicione a tag 'h1' com o texto 'Exercício 5.2 - JavaScript DOM' como filho da tag 'body'
+        const filhoH1 = document.createElement('h1');
+        filhoH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+        document.body.appendChild(filhoH1);
 
-    // Adicione a tag 'main' com a classe 'main-content' como filho da tag 'body'
-    const filhoMain = document.createElement('main');
-    filhoMain.className = 'main-content';
-    document.paiBody.appendChild(filhoMain);
+        // Adicione a tag 'main' com a classe 'main-content' como filho da tag 'body'
+        const filhoMain = document.createElement('main');
+        filhoMain.className = 'main-content';
+        document.body.appendChild(filhoMain);
 
-    // Adicione a tag 'section' com a classe 'center-content' como filho da tag 'main' criada no passo 2
-    const filhoSection = document.createElement('section');
-    filhoSection.className = 'center-content';
-    document.filhoMain.appendChild(filhoSection);
+        // Adicione a tag 'section' com a classe 'center-content' como filho da tag 'main' criada no passo 2
+        const filhoSection = document.createElement('section');
+        filhoSection.className = 'center-content';
+        filhoMain.appendChild(filhoSection);
+
+        // Adicione a tag 'p' como filho do 'section' criado no passo 3 e coloque algum 'texto'
+        const tagzadaP = document.createElement('p');
+        tagzadaP.innerText = 'algum texto';
+        filhoSection.appendChild(tagzadaP);
+
+        // Adicione a tag 'section' com a classe 'left-content' como filho da tag 'main' criada no passo 2
+        const filhoSectionLeft = document.createElement('section');
+        filhoSectionLeft.className = 'left-content';
+        filhoMain.appendChild(filhoSectionLeft);
+
+        // Adicione a tag section com a classe right-content como filho da tag main criada no passo 2
+        const filhoSectionRight = document.createElement('section');
+        filhoSectionRight.className = 'right-content';
+        filhoMain.appendChild(filhoSectionRight);
+
+        // Adicione uma 'imagem' com 'src' configurado para o valor 'https://picsum.photos/200' e classe 'small-image'.
+        // Esse elemento deve ser filho do 'section' criado no passo 5;
+        const imagemExer = document.createElement('img');
+        imagemExer.src = 'https://picsum.photos/200 ';
+        imagemExer.className = 'small-image';
+        filhoSectionLeft.appendChild(imagemExer);
+
+        //Adicione uma lista não ordenada com os valores de '1 a 10 por extenso', ou seja, um , dois , três , ... 
+        // como valores da lista. Essa lista deve ser 'filha' do 'section' criado no passo 6;
+        const listaNaoOrdenada = document.createElement('ul');
+        filhoSectionRight.appendChild(listaNaoOrdenada);
+
+        const valoresExtenso= ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+        for (let key in valoresExtenso) {
+            listaLi = document.createElement('li');
+            listaLi.innerHTML = key;
+            listaNaoOrdenada.appendChild(listaLi);
+        }
+
+        //Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2
+        // const primeiroH3 = document.createElement('h3');
+        // const segundoH3 = document.createElement('h3');
+        // const terceiroH3 = document.createElement('h3');
+        // filhoMain.appendChild(primeiroH3);
+        // filhoMain.appendChild(segundoH3);
+        // filhoMain.appendChild(terceiroH3);
+
+        // tentei usar o método acima mas não foi e após isso resolvi usar h3 mas sem imprimir nenhum texto, coisa que não deu certo e então após consultar o gabarito
+        // adicionei o texto
+
+        for (let i = 0; i < 3; i += 1) {
+            const agazada = document.createElement('h3');
+            agazada.innerText = i + ' h3 criado';
+            filhoMain.appendChild(agazada);
+        }
 
     </script>
-  </body>
+</body>
+
 </html>
