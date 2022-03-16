@@ -59,36 +59,43 @@
 
 <body>
     <script>
+        //Ex 1
         // Adicione a tag 'h1' com o texto 'Exercício 5.2 - JavaScript DOM' como filho da tag 'body'
         const filhoH1 = document.createElement('h1');
         filhoH1.innerText = 'Exercício 5.2 - JavaScript DOM';
         document.body.appendChild(filhoH1);
 
+        //Ex 2
         // Adicione a tag 'main' com a classe 'main-content' como filho da tag 'body'
         const filhoMain = document.createElement('main');
         filhoMain.className = 'main-content';
         document.body.appendChild(filhoMain);
 
+        //Ex 3
         // Adicione a tag 'section' com a classe 'center-content' como filho da tag 'main' criada no passo 2
         const filhoSection = document.createElement('section');
         filhoSection.className = 'center-content';
         filhoMain.appendChild(filhoSection);
 
+        //Ex 4
         // Adicione a tag 'p' como filho do 'section' criado no passo 3 e coloque algum 'texto'
         const tagzadaP = document.createElement('p');
         tagzadaP.innerText = 'algum texto';
         filhoSection.appendChild(tagzadaP);
 
+        //Ex 5
         // Adicione a tag 'section' com a classe 'left-content' como filho da tag 'main' criada no passo 2
         const filhoSectionLeft = document.createElement('section');
         filhoSectionLeft.className = 'left-content';
         filhoMain.appendChild(filhoSectionLeft);
 
+        //Ex 6
         // Adicione a tag section com a classe right-content como filho da tag main criada no passo 2
         const filhoSectionRight = document.createElement('section');
         filhoSectionRight.className = 'right-content';
         filhoMain.appendChild(filhoSectionRight);
 
+        //Ex 7
         // Adicione uma 'imagem' com 'src' configurado para o valor 'https://picsum.photos/200' e classe 'small-image'.
         // Esse elemento deve ser filho do 'section' criado no passo 5;
         const imagemExer = document.createElement('img');
@@ -96,6 +103,7 @@
         imagemExer.className = 'small-image';
         filhoSectionLeft.appendChild(imagemExer);
 
+        //Ex 8
         //Adicione uma lista não ordenada com os valores de '1 a 10 por extenso', ou seja, um , dois , três , ... 
         // como valores da lista. Essa lista deve ser 'filha' do 'section' criado no passo 6;
         const listaNaoOrdenada = document.createElement('ul');
@@ -109,6 +117,7 @@
             listaNaoOrdenada.appendChild(listaLi);
         }
 
+        //Ex 9
         //Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2
         // const primeiroH3 = document.createElement('h3');
         // const segundoH3 = document.createElement('h3');
@@ -128,6 +137,7 @@
 
         // Segunda Parte :)
 
+        //Ex 1
         // Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
         // Adicione a classe 'title' na tag 'h1' criada;
 
@@ -140,29 +150,34 @@
 
         filhoH1.className = 'title';
 
+        //Ex 2
         // Adicione a classe 'description' nas 3 tags 'h3' criadas;
         const agazada = document.getElementsByTagName('h3');
         for (let i = 0; i < 3; i += 1) {
             agazada[i].className = 'description';
         }
 
+        //Ex 3
         // Remova a 'section' criado no passo 5 (aquele que possui a classe 'left-content' ). Utilize a função .removeChild()
 
         filhoMain.removeChild(filhoSectionLeft);
 
+        //Ex 4
         //Centralize a 'section' criado no passo 6 (aquele que possui a classe 'right-content' ). 
         //Dica: para centralizar, basta configurar o 'margin-right: auto' da section
 
         filhoSectionRight.style.marginRight = 'auto';
 
+        //Ex 5
         //Troque a 'cor de fundo' do elemento 'pai' da 'section' criada no passo 3 (aquela que possui a classe 'center-content' ) para a cor 'verde'
         // filhoMain.style.background = 'green';
         const mudancaCor = document.getElementsByClassName('center-content')[0];
         mudancaCor.style.background = 'green';
 
+        //Ex 6
         //Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
-        ul.lastChild.removeChild();
-        ul.lastChild.removeChild();
+        listaNaoOrdenada.lastChild.remove();
+        listaNaoOrdenada.lastChild.remove();
     </script>
 </body>
 
