@@ -108,15 +108,15 @@ botao1.addEventListener('click', sextou);
 function mouseEmCima() {
   let dias = document.querySelector('#days');
 
-  dias.addEventListener('mouseover', function(event) {
-    event.target.style.fontSize = '50px';
+  dias.addEventListener('mouseover', function (event) {
+    event.target.style.fontSize = '30px';
   })
 };
 
 function mouseSaiuDeCima() {
   let dias = document.querySelector('#days');
 
-  dias.addEventListener('mouseout', function(event) {
+  dias.addEventListener('mouseout', function (event) {
     event.target.style.fontSize = '20px';
   })
 };
@@ -145,3 +145,39 @@ function mudarCor(cor) {
 }
 
 mudarCor('blue');
+
+//Exercício 9
+function selecionarTarefa() {
+  let tarefa = document.querySelector('div .task');
+
+  tarefa.addEventListener('click', function () {
+    if (tarefa.className === 'task') {
+      tarefa.className = 'task selected';
+    } else {
+      tarefa.className = 'task';
+    }
+  })
+};
+
+selecionarTarefa();
+
+//Exercício 10
+
+// Este exercício está incompleto
+
+// function clickDiaMes() {
+//   let diaSelecionado = document.getElementsByClassName('task selected');
+//   let dias = document.querySelector('#days');
+//   let tarefa = document.querySelector('.task');
+
+//   dias.addEventListener('click', function () {
+//     if (tarefa.className === 'task selected') {
+//       if (dias.style.backgroundColor != tarefa.style.backgroundColor) {
+//         dias.style.backgroundColor = tarefa.style.backgroundColor;
+//       } else {
+//         dias.style.backgroundColor = '';
+//       }
+//     }
+//   });
+// }
+// clickDiaMes();
