@@ -76,3 +76,28 @@ function changeFeriados() {
   }
 }
 botao.addEventListener('click', changeFeriados);
+
+//Exercício 4
+let botao1 = document.createElement("button");
+botao1.innerHTML = 'Sexta-feira';
+botao1.id = "btn-friday";
+
+function sextasFeiras(sextasFeiras) {
+  let pai = document.getElementsByClassName('buttons-container')[0];
+  pai.appendChild(botao1);
+}
+sextasFeiras('sextasFeiras');
+
+//Exercício 5
+function sextou() {
+  let sextou = document.getElementsByClassName('friday');
+  let diasQueSextarei = [ 4, 11, 18, 25 ];
+  for (let i = 0; i < sextou.length; i += 1) {
+    if (sextou[i].innerText !== 'Sextou') {
+      sextou[i].innerText  = "Sextou";
+    } else {
+      sextou[i].innerText = diasQueSextarei[i];
+    }
+  }
+}
+botao1.addEventListener('click', sextou);
