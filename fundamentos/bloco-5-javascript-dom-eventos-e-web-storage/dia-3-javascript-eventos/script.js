@@ -91,13 +91,35 @@ sextasFeiras('sextasFeiras');
 //Exercício 5
 function sextou() {
   let sextou = document.getElementsByClassName('friday');
-  let diasQueSextarei = [ 4, 11, 18, 25 ];
+  let diasQueSextarei = [4, 11, 18, 25];
   for (let i = 0; i < sextou.length; i += 1) {
     if (sextou[i].innerText !== 'Sextou') {
-      sextou[i].innerText  = "Sextou";
+      sextou[i].innerText = "Sextou";
     } else {
       sextou[i].innerText = diasQueSextarei[i];
     }
   }
 }
 botao1.addEventListener('click', sextou);
+
+//Exercício 6
+// Referencias https://www.devhandbook.com/javascript/dom/event-target/ e tambem a aula do Prof Antares 
+// onde ele usou o metodo de chamar a função direto no addEventListener
+function mouseEmCima() {
+  let dias = document.querySelector('#days');
+
+  dias.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = '50px';
+  })
+};
+
+function mouseSaiuDeCima() {
+  let dias = document.querySelector('#days');
+
+  dias.addEventListener('mouseout', function(event) {
+    event.target.style.fontSize = '20px';
+  })
+};
+
+mouseEmCima();
+mouseSaiuDeCima();
