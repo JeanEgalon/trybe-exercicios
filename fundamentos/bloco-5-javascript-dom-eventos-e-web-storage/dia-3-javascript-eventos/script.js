@@ -123,3 +123,25 @@ function mouseSaiuDeCima() {
 
 mouseEmCima();
 mouseSaiuDeCima();
+
+//Exercício 7
+function tarefaPersonalizada(string) {
+  let span = document.createElement('span');
+  let paizao = document.getElementsByClassName('my-tasks')[0];
+  span.innerHTML = string;
+  paizao.appendChild(span);
+}
+
+tarefaPersonalizada('cozinhar');
+
+//Exercício 8
+function mudarCor(cor) {
+  let criandoElemento = document.createElement('div');
+  criandoElemento.className = 'task';
+  criandoElemento.style.backgroundColor = cor;
+
+  let paizao = document.getElementsByClassName('my-tasks')[0];
+  paizao.appendChild(criandoElemento);
+}
+
+mudarCor('blue');
