@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrybeTrip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>Concurso TrybeTrip!</header>
+    <main>
+        <form action="" method="GET">
+            <div class="dadoscompletos">
+                <label for="nome-completo">Nome:</label>
+                <input type="text" id="nome-completo" name="nome-completo" minlength="10" minlength="40" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" minlength="10" minlength="50">
+            </div>
+
+            <div class="opcoes-viagem">
+                <label for=""></label>
+                <input type="radio" id="" name="opcoes" value="">Opção 1
+                <input type="radio" id="" name="opcoes" value="">Opção 2
+                <input type="radio" id="" name="opcoes" value="">Opção 3
+                <input type="radio" id="" name="opcoes" value="">Opção 4
+            </div>
+
+            <div class="espaco-resposta">
+                <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+                <textarea name="digite-uma-resposta" id="digite-uma-resposta" cols="30" rows="10"
+                    maxlength="500"></textarea>
+            </div>
+
+            <div class="data-viagem">
+                <label for="data-viagem">Data:</label>
+                <input type="date" id="data-viagem" name="data-viagem" value="">
+                <br>
+            </div>
+
+            <div class="termos-aceitar">
+                <label for="concordo-termo1">Concordo 1</label>
+                <input type="checkbox" id="concordo-termo1">
+                <br>
+                <label for="concordo-termo2">Concordo 2</label>
+                <input type="checkbox" id="concordo-termo2">
+            </div>
+
+            <section id="botoes">
+                <button type="submit" id="botao-enviar">Enviar</button>
+                <button type="reset">Apagar</button>
+            </section>
+        </form>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
