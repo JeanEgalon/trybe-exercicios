@@ -17,7 +17,7 @@ header {
     width: 50%;
     margin: 10px auto;
     font-size: 25px;
-    padding: 50px;
+    padding: 1%;
 }
 
 main {
@@ -27,7 +27,7 @@ main {
 form {
     background-color: rgb(20, 88, 31);
     margin: 10px auto;
-    height: 410px;
+    height: 620px;
     width: 50%;
     border: 1px solid;
     border-radius: 5px;
@@ -43,6 +43,7 @@ form .dadoscompletos input {
 }
 
 form div textarea {
+    border-radius: 5px;
     margin: 8px 0px;
 }
 form .termos-aceitar input {
