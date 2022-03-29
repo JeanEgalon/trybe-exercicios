@@ -89,7 +89,7 @@ body {
   flex-direction: column;
   margin: 20px;
   flex-basis: 350px;
-  align-items: center;
+  justify-content: center;
   flex-grow: 1;
 }
 
