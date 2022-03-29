@@ -1,3 +1,22 @@
+Parte 1
+
+1 - Adicione uma propriedade que defina o tamanho Flexbox base para o container da imagem 268px e para o container do menu 500px . Após aplicar as propriedades o header deverá estar similar a imagem abaixo:
+
+![Primeira Imagem](imgs/exercicio-part1-1.png)
+
+2 - Adicione uma propriedade Flexbox que modifique a ordem em que a logomarca e os itens do menu aparecem na tela. Após aplicar a propriedade o header deverá estar similar a imagem abaixo:
+
+![Segunda Imagem](imgs/exercicio-part1-2.png)
+
+3 - Adicione uma propriedade Flexbox que faça o container do menu crescer, quando houver espaço disponível. Após aplicar a propriedade o header deverá estar similar a imagem abaixo:
+
+![Terceira Imagem](imgs/exercicio-part1-3.png)
+
+4 - Utilize a propriedade align-self no elemento correto para que o header da página tenha o seguinte comportamento:
+
+![Quarta Imagem](imgs/exercicio-part1-4.png)
+Parte 2
+
 1 - Aplique uma base de 350px para seu container aside . Deverá ficar similar a imagem abaixo:
 
 ![Primeira Imagem](imgs/exercicio-part2-1.png)
