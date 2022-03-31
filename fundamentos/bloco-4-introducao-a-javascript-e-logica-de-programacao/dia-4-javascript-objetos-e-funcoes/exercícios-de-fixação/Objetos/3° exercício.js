@@ -1,5 +1,3 @@
-// 3 - Adicione ao objeto a chave bestInTheWorld e atribua a esta chave um array contendo as datas em que a jogadora Marta foi considerada a melhor do mundo.
-
 let player = {
     name : 'Marta',
     lastName : 'Silva',
