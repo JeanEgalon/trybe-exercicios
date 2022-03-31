@@ -1,5 +1,3 @@
-// 1 - Crie um objeto player contendo as variáveis listadas abaixo.
-
 let name = 'Marta';
 let lastName = 'Silva';
 let age = 34;
