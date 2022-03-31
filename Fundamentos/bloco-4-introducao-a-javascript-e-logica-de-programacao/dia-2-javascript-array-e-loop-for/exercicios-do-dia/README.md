@@ -1,1 +1,0 @@
-Aqui você encontrará todos os exercícios dos conteúdos vistos nas aulas e também os exercícios do dia, lembrando que o enunciado das questões se encontram nos arquivos de cada exercício.
