@@ -15,7 +15,6 @@ window.onload = function () {
     document.body.style.fontFamily = fonteSalva;
     
 }
-//Alterando a Cor de Fundo da Página
 function alterarCorDeFundo() {
     let selecionador = document.getElementById('cor-de-fundo');
     selecionador.addEventListener('change', function () {
@@ -26,7 +25,6 @@ function alterarCorDeFundo() {
 }
 alterarCorDeFundo();
 
-//Alterando a Cor do Texto
 function corDoTexto() {
     let corTexto = document.getElementById('cor-do-texto');
     corTexto.addEventListener('change', function () {
@@ -37,7 +35,6 @@ function corDoTexto() {
 }
 corDoTexto();
 
-//Alterando o Tamanho da Fonte do paragrafo
 function tamanhoDaFonte() {
     let tamanhoFonte = document.querySelector('#tamanhoFonte');
     tamanhoFonte.addEventListener('change', function () {
@@ -47,7 +44,6 @@ function tamanhoDaFonte() {
 }
 tamanhoDaFonte();
 
-//Alterando o Espaçamento entre Linhas
 function espaçamentoEntreLinhas() {
     let espacamento = document.querySelector('#espacamento-linha');
     espacamento.addEventListener('change', function () {
@@ -57,7 +53,6 @@ function espaçamentoEntreLinhas() {
 }
 espaçamentoEntreLinhas();
 
-//Alterando a Fonte
 function fonteFamily() {
     let fonte = document.querySelector('#tipo-da-fonte');
     fonte.addEventListener('change', function () {
