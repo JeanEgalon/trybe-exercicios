@@ -1,5 +1,3 @@
-// Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2
-
 let listinha = [];
 
 for (let contador = 1; contador < 26; contador += 1) {
