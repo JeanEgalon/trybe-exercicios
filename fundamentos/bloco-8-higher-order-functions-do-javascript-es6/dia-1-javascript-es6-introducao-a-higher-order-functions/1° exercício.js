@@ -8,7 +8,7 @@ const newEmployees = (param) => {
 };
 
 const novaPessoa = (nome) => {
-  let emailCorreto = nome.toLowerCase().replace(/ /g, "_");
+  let emailCorreto = nome.toLowerCase().replace(" ", "_");
   return { nome, email: `${emailCorreto}@trybe.com` };
 };
 
