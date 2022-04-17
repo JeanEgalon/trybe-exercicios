@@ -69,7 +69,7 @@ function fantasyOrScienceFictionAuthors() {
   return ordemAlfa;
 }
 
-// --------------- GABARITO POIS FIQUEM CONFUSO NO SOLUÇÂO ---------------
+// --------------- GABARITO POIS FIQUEI CONFUSO NO SOLUÇÂO ---------------
 
 function fantasyOrScienceFictionAuthors() {
     const wantedGenres = ['Fantasia', 'Ficção Científica'];
