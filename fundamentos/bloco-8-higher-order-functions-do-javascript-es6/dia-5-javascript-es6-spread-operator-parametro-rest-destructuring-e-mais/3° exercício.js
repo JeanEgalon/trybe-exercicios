@@ -1,5 +1,3 @@
-//3 - Escreva a função personLikes, que dado um objeto de parâmetro que representa uma pessoa, retorna todos os gostos daquela pessoa, conforme mostrado abaixo:
-//Dica: use object destructuring.
 const alex = {
   name: "Alex",
   age: 26,
