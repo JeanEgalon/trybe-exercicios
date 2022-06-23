@@ -1,9 +1,9 @@
 let names = {
-    person1: 'João',
-    person2: 'Maria',
-    person3: 'Jorge',
-  };
+  person1: 'Maria',
+  person2: 'João',
+  person3: 'Jorge',
+};
 
-  for (contador in names) {
-      console.log("Olá ", names[contador]);
-  }
+for (contador in names) {
+  console.log('Olá ', names[contador]);
+}
