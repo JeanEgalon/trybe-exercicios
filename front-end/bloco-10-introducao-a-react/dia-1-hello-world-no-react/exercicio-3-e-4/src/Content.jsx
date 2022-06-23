@@ -4,7 +4,7 @@ const conteudos = [
   {
     conteudo: 'High Order Functions',
     bloco: 8,
-    status: 'Aprendido',
+    status: 'Aprendido!',
   },
   {
     conteudo: 'Composicao de Componentes',
