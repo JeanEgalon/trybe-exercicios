@@ -8,7 +8,7 @@ const compromissos = ['estudar', 'projeto', 'estudar mais'];
 
 class App extends React.Component {
   render() {
-    return <ul>{compromissos.map((compro) => Task(compro))}</ul>;
+    return <ul>{compromissos.map((compro) => Task(compromisso))}</ul>;
   }
 }
 
