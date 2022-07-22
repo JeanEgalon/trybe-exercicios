@@ -26,7 +26,6 @@
         theme: 'dark',
       };
       
-      // 3 - Adicione um case dentro do switch de cada um dos reducers para alterar os estados theme e status. O objetivo do themeReducer é alternar o theme entre 'light' e 'dark'. O objetivo do statusReducer é alternar o status entre 'offline' e 'online'.
       const themeReducer = (state = THEME_INITIAL_STATE, action) => {
         switch (action.type) {
           case 'CHANGE_THEME':
@@ -54,13 +53,10 @@
             return state;
         }
       };
-      // 1 - Combine os reducers existentes com a função combineReducers e salve-o em uma constante.
       
-
       const themeButton = document.getElementById('toggle-theme');
       const statusButton = document.getElementById('toggle-status');
 
-      // 4 - Faça o dispatch de cada uma das actions ao clicar nos respectivos botões.
       themeButton.addEventListener('click', () => {
         // coloque o código aqui.
         store.dispatch({ type: 'CHANGE_THEME'})
@@ -71,19 +67,14 @@
         store.dispatch({ type: 'CHANGE_STATUS'})
       });      
 
-      // 2 - Crie uma store com a combinação dos reducers.
       const rootReducer = Redux.combineReducers({themeReducer, statusReducer})
       const store = Redux.createStore(
         rootReducer,
         window.__REDUX_DEVTOOLS_EXTENSION__ &&
           window.__REDUX_DEVTOOLS_EXTENSION__()
       );
-
-      // 5 - Adicione um store.subscribe() para atualizar as seguintes informações na página:
       
       store.subscribe(() => {
-        //Se o tema for light, o body deverá possuir uma cor de fundo escura e uma letra clara.
-        //Se o tema for dark, deverá possuir uma cor de fundo clara e uma letra escura.
         const estadoAtual = store.getState();
         const currentTheme = estadoAtual.themeReducer.theme;
         const pageBody = document.querySelector('body');
@@ -97,8 +88,7 @@
           pageBody.style.color = 'black';
           themeButton.innerText = `Dark Mode`;
         }
-        //Se o status for online, o #status deverá possuir o texto Online. Se o status for offline, o #status deverá possuir o texto Offline.
-        //Não se esqueça também de modificar o texto dos botões para refletirem exatamente o que eles fazem.
+
         const currentLogin = estadoAtual.statusReducer.status;
         const checkOn = document.getElementById('status');
         if (currentLogin === 'online') {
