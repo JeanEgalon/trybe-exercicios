@@ -11,28 +11,17 @@ const getAll = async (_req, res) => {
 };
 
 const getById = async (req, res) => {
-  try {
-    const { id } = req.params;
-    const book = await BookService.getById(id);
+  const { id } = req.params;
+  const book = await BookService.getById(id);
 
-    if (!book) return res.status(404).json({ message: "Book not found" });
+  if (!book) return res.status(404).json({ message: "Book not found" });
 
-    return res.status(200).json(book);
-  } catch (e) {
-    console.log(e.message);
-    res.status(500).json({ message: 'Ocorreu um erro' });
-  }
+  return res.status(200).json(book);
 };
 
 const create = async (req, res) => {
-  try {
-    const { title, author, pageQuantity } = req.body;
-    const book = await BookService.create(title, author, pageQuantity)
-    res.status(201).json(book);
-  } catch (error) {
-    console.log(error.message);
-    res.status(500).json({ message: 'Ocorreu um erro' });
-  }
+  const result = await BookService.create(req.body)
+  res.status(201).json(result);
 };
 
 const update = async (req, res) => {
