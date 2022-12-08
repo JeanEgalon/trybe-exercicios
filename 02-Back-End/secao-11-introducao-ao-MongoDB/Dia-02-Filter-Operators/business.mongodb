@@ -1,0 +1,12 @@
+use("business");
+// db.restaurants.countDocuments( { cuisine: { $nin: [ "American" ] } } )
+
+// db.restaurants.countDocuments( { cuisine: { $ne: [ "American" ] } } )
+
+// db.restaurants.countDocuments( { cuisine: { $ne: "American" } } )
+
+// db.restaurants.countDocuments({rating: {$gte: 8}})
+
+// db.restaurants.countDocuments({rating: {$lt: 4}})
+
+// db.restaurants.countDocuments({rating: {$nin: [5, 6, 7]}})
