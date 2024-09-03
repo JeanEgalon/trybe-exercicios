@@ -1,6 +1,6 @@
 # Trybe
 
-Este repositório contêm todas as atividades de aprendizagem desenvolvidas por <a target="_blank" href="[https://link](https://www.linkedin.com/in/jean-egalon/)">Jean Egalon</a> enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
+Este repositório contêm todas as atividades de aprendizagem desenvolvidas por [Jean Egalon](https://www.linkedin.com/in/jean-egalon/) enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
 
